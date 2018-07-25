@@ -40,6 +40,10 @@ message (STATUS "Searching dependent libraries. This may take a few minutes...")
 find_package (NETCDF REQUIRED)
 include_directories (${NETCDF_INCLUDE_DIR})
 
+#libexecinfo is required in *BSD
+find_package(Backtrace REQUIRED)
+list (APPEND GMT_OPTIONAL_LIBRARIES ${Backtrace_LIBRARIES})
+
 # libcurl is required since 5.4
 find_package (CURL REQUIRED)
 include_directories (${CURL_INCLUDE_DIRS})

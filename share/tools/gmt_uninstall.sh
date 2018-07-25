@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # $Id: gmt_uninstall.sh 19521 2017-12-27 22:38:24Z pwessel $
 #
 # Copyright (c) 1991-2018 by P. Wessel, W. H. F. Smith, R. Scharroo,

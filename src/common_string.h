@@ -82,7 +82,9 @@ EXTERN_MSC char *stresep (char **stringp, const char *delim, int esc);
 
 EXTERN_MSC int gmt_match_string_in_file (const char *filename, const char *string);
 
+#ifndef __FreeBSD__
 EXTERN_MSC char *basename(char *path);
+#endif
 
 #ifdef __cplusplus
 }
